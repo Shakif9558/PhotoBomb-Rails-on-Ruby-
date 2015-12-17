@@ -97,6 +97,7 @@ Devise.setup do |config|
   # encryptor), the cost increases exponentially with the number of stretches (e.g.
   # a value of 20 is already extremely slow: approx. 60 seconds for 1 calculation).
   config.stretches = Rails.env.test? ? 1 : 10
+  config.secret_key = '47024d714e93a3bca98bace95939eae4a0a729d0f641dbdd025de05ff9a760aed7a4bebb541c0724bbcc5903d79fe9b9d439bd77c578f4d81cbb02702315877f'
 
   # Setup a pepper to generate the encrypted password.
   # config.pepper = 'a93237e08681378864429053e02cc8661c7228f5d408a62561b078a5f4529883081b1da2bb309428cc5416fb66756c08c77eee6e9171f8fb3014de1b9b094dfd'
